@@ -1,29 +1,43 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!doctype html>
+<html lang="tr" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <title>Hakkımda</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hakkımda — Civan Mert</title>
+  <meta name="description" content="Civan Mert hakkında: tecrübe, yaklaşım ve değerler."/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
 </head>
 <body>
-  <header>
-    <h1>Hakkımda</h1>
-    <nav>
-      <a href="index.html">Ana Sayfa</a>
-      <a href="about.html">Hakkımda</a>
-      <a href="contact.html">İletişim</a>
-    </nav>
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="logo" src="img/logo.svg" alt=""> <span>Civan<span class="accent">Mert</span></span></a>
+      <nav class="nav"><ul><li><a href="index.html#projeler">Projeler</a></li><li><a href="index.html#blog">Blog</a></li><li><a class="btn btn-primary" href="contact.html">İletişim</a></li></ul></nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Merhaba, ben Civan!</h2>
-      <p>Yazmayı, fotoğraf çekmeyi ve doğada vakit geçirmeyi seven biriyim. Bu blogda düşüncelerimi ve hikayelerimi paylaşıyorum.</p>
-    </section>
+  <main class="container section prose">
+    <h1>Merhaba, ben Civan 👋</h1>
+    <p>Arayüzü <em>hız</em> ve <em>duygu</em> ile yazmayı seven bir geliştiriciyim. Piksel titizliği, erişilebilirlik ve performans üçgeninde çalışırım.</p>
+    <h2>Yaklaşım</h2>
+    <ul>
+      <li><strong>Ölç, sonra parlat:</strong> Lighthouse/CLS/INP takıntısı.</li>
+      <li><strong>Vanilla first:</strong> Gereksiz bağımlılık yok.</li>
+      <li><strong>Tasarım dili:</strong> Sade, ritmik, okunabilir.</li>
+    </ul>
+    <h2>Yetenekler</h2>
+    <div class="tags">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Accessibility</span><span>Performance</span>
+    </div>
+    <p class="muted">Bu site tamamen düz dosyalarla, JSON’dan blog yükleyerek çalışıyor.</p>
   </main>
 
-  <footer>
-    <p>© 2025 Benim Blogum</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> Civan Mert</p>
+    </div>
   </footer>
+
+  <script defer src="main.js"></script>
 </body>
 </html>
