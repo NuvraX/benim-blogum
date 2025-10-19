@@ -2,11 +2,13 @@
   {
     "title": "İlk Yazım",
     "date": "2025-10-19",
-    "content": "Merhaba dünya! Bu benim ilk blog yazım."
+    "image": "img/yazi1.jpg",
+    "content": "Merhaba dünya! Bu benim ilk blog yazım. Yeni başlangıçlar her zaman heyecan vericidir."
   },
   {
     "title": "İkinci Yazı",
     "date": "2025-10-20",
-    "content": "Bugün hava çok güzeldi, biraz yürüyüş yaptım."
+    "image": "img/yazi2.jpg",
+    "content": "Bugün hava çok güzeldi, biraz yürüyüş yaptım. Doğanın içinde olmak bana iyi geliyor."
   }
 ]
