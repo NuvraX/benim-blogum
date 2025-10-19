@@ -1,13 +1,31 @@
-blog-site/
-├── index.html
-├── about.html
-├── blog.html
-├── post.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-├── images/
-│   └── (fotoğraflar)
-├── data/
-│   └── posts.json
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benim Blogum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Benim Blogum</h1>
+    <nav>
+      <a href="#">Ana Sayfa</a>
+      <a href="#">Hakkımda</a>
+      <a href="#">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="blog-container">
+      <!-- JavaScript ile yazılar buraya gelecek -->
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Benim Blogum</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
