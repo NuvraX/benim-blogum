@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://example.com/index.html</loc><lastmod>2025-10-19</lastmod></url>
-  <url><loc>https://example.com/about.html</loc><lastmod>2025-10-19</lastmod></url>
-  <url><loc>https://example.com/contact.html</loc><lastmod>2025-10-19</lastmod></url>
+  <url><loc>https://nuvrax.github.io/cvnartstudio/index.html</loc></url>
+  <url><loc>https://nuvrax.github.io/cvnartstudio/about.html</loc></url>
+  <url><loc>https://nuvrax.github.io/cvnartstudio/contact.html</loc></url>
 </urlset>
