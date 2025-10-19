@@ -1,14 +1,15 @@
-# Benim Blogum
+# ⚡ Civan Mert — Portfolio & Blog (Static)
 
-Bu proje Civan'ın kişisel blog sitesidir. HTML, CSS, JavaScript ve JSON kullanılarak oluşturulmuştur.
+- Sıfır bağımlılık: **HTML + CSS + JS**
+- JSON'dan blog, modal okuma, arama & etiket filtreleme
+- Koyu/Açık tema (localStorage)
+- Erişilebilirlik: skip-link, semantic, dialog
+- Responsive, pürüzsüz animasyonlar
 
-## Özellikler
-- Dinamik blog yazıları
-- Görselli içerik desteği
-- Responsive ve sade tasarım
-- Kolayca genişletilebilir yapı
+## Geliştirme
+En rahatı VS Code **Live Server**:
+1. Bu klasörü aç.
+2. `index.html` üzerinde `Go Live`.
+3. Değişiklikleri kaydet, otomatik yenilensin.
 
-## Nasıl Kullanılır
-1. `posts.json` dosyasına yeni yazılar ekleyin.
-2. `style.css` ile tasarımı özelleştirin.
-3. GitHub Pages üzerinden yayınlayın.
+## Yapı
