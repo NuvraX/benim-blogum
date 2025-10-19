@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>İletişim — Civan Mert</title>
+  <meta name="description" content="Projeni konuşalım. Basit bir form bırak, dönüş yapayım."/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
+</head>
+<body>
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="logo" src="img/logo.svg" alt=""> <span>Civan<span class="accent">Mert</span></span></a>
+      <nav class="nav"><ul><li><a href="about.html">Hakkımda</a></li><li><a href="index.html#blog">Blog</a></li></ul></nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Hadi konuşalım</h1>
+    <form id="contactForm" class="card form">
+      <label>Ad Soyad
+        <input type="text" name="name" required autocomplete="name" />
+      </label>
+      <label>E-posta
+        <input type="email" name="email" required autocomplete="email" />
+      </label>
+      <label>Konu
+        <input type="text" name="subject" required />
+      </label>
+      <label>Mesaj
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Gönder</button>
+        <span id="formStatus" class="muted small" role="status" aria-live="polite"></span>
+      </div>
+    </form>
+    <p class="muted small">Bu demo formu e-postanızı <code>mailto:</code> ile hazırlar; arka uç gerektirmez.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><p>© <span id="y"></span> Civan Mert</p></div>
+  </footer>
+
+  <script defer src="main.js"></script>
+</body>
+</html>

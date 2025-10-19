@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Vanilla JS ile ışık hızında blog",
+      "date": "2025-09-14",
+      "tags": [
+        "javascript",
+        "perf"
+      ],
+      "cover": "img/post-1.webp",
+      "excerpt": "Frameworksüz, sade ve hızlı: JSON'dan içerik çekip modalda okutuyoruz.",
+      "content": "<p>Bu sitede blog verisi statik <code>posts.json</code> dosyasından alınıyor. <strong>fetch</strong> ile okunuyor, state'de saklanıyor ve filtre/arama anında uygulanıyor.</p><p>Bonus: erişilebilir dialog, keyboard friendly ve sıfır kütüphane.</p>"
+    },
+    {
+      "id": 2,
+      "title": "CSS ile cam efekti (glass) nasıl yapılır?",
+      "date": "2025-08-01",
+      "tags": [
+        "css",
+        "design"
+      ],
+      "cover": "img/post-2.webp",
+      "excerpt": "Backdrop blur + renk karışımı ile hafif ama şık cam katman.",
+      "content": "<p><code>backdrop-filter: blur(12px)</code> ve <code>color-mix()</code> ile performansı yüksek cam efekti.</p><p>İpucu: Sınır için gradient de güzel.</p>"
+    },
+    {
+      "id": 3,
+      "title": "Oyun geliştirirken akışta kalma tüyoları",
+      "date": "2025-06-10",
+      "tags": [
+        "oyun",
+        "javascript"
+      ],
+      "cover": "img/post-3.webp",
+      "excerpt": "Pomodoro, küçük zaferler ve gerçek zamanlı geri bildirim.",
+      "content": "<p>Akış için görevleri küçük parçalara böl, hızlı geri bildirim al ve sık sık oynanabilir sürüm üret.</p>"
+    }
+  ]
+}
