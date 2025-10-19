@@ -4,24 +4,42 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>İletişim — CVNART</title>
-  <meta name="description" content="Projeni konuşalım."/>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Projeni konuşalım. Web sitesi, logo, kartvizit ve SEO için hızlı teklif al."/>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
-  
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="canonical" href="https://nuvrax.github.io/cvnartstudio/contact.html" />
+
+  <!-- OG / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="İletişim — CVNART">
-  <meta property="og:description" content="Projeni konuşalım.">
-  <meta property="og:image" content="img/hero.webp">
+  <meta property="og:description" content="Web sitesi, logo, kartvizit ve SEO için hızlı teklif al.">
+  <meta property="og:image" content="https://nuvrax.github.io/cvnartstudio/img/hero.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="canonical" href="./contact.html">
 
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "CVNART", "url": "https://example.com/", "logo": "img/logo.svg", "sameAs": [], "description": "Web sitesi tasarım ve geliştirme, logo tasarımı, kartvizit tasarımı ve SEO danışmanlığı."}</script>
+  <!-- Schema.org (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"CVNART",
+    "url":"https://nuvrax.github.io/cvnartstudio/",
+    "logo":"https://nuvrax.github.io/cvnartstudio/img/logo.svg",
+    "description":"Web sitesi tasarım/geliştirme, logo ve kartvizit tasarımı, SEO danışmanlığı."
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+
   <header class="site-header glass">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Anasayfa"><img class="logo" src="img/logo.svg" alt=""><span>CVN<span class="accent">ART</span></span></a>
+      <a class="brand" href="index.html" aria-label="Anasayfa">
+        <img class="logo" src="img/logo.svg" alt="">
+        <span>CVN<span class="accent">ART</span></span>
+      </a>
       <nav class="nav" aria-label="Ana menü">
         <button id="navToggle" class="icon-btn" aria-expanded="false" aria-controls="navMenu" title="Menü"><span class="i i-menu"></span></button>
         <ul id="navMenu">
@@ -30,24 +48,57 @@
           <li><a href="index.html#fiyat">Fiyatlar</a></li>
           <li><a href="index.html#blog">Blog</a></li>
           <li><a href="about.html">Hakkımda</a></li>
-          <li><a href="contact.html" class="btn btn-primary">İletişim</a></li>
+          <li><a href="contact.html" class="btn btn-primary" aria-current="page">İletişim</a></li>
           <li><button id="themeToggle" class="icon-btn" title="Tema"><span class="i i-sun"></span></button></li>
         </ul>
       </nav>
     </div>
   </header>
-  
-<main class="container section" id="main">
-  <h1>Hadi Konuşalım</h1>
-  <form id="contactForm" class="card form">
-    <label>Ad Soyad<input type="text" name="name" required autocomplete="name"/></label>
-    <label>E-posta<input type="email" name="email" required autocomplete="email"/></label>
-    <label>Konu<input type="text" name="subject" required/></label>
-    <label>Mesaj<textarea name="message" rows="6" required></textarea></label>
-    <div class="form-actions"><button class="btn btn-primary" type="submit">Gönder</button><span id="formStatus" class="muted small" role="status" aria-live="polite"></span></div>
-  </form>
-  <p class="muted small">Bu form e-postayı <code>mailto:</code> ile hazırlar.</p>
-</main>
+
+  <main class="container section" id="main">
+    <h1>Hadi konuşalım</h1>
+
+    <!-- İletişim formu (mailto + JS destekli) -->
+    <form id="contactForm" class="card form" novalidate>
+      <!-- Spam botlar için honeypot -->
+      <input type="text" name="company" autocomplete="organization" tabindex="-1" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px;"/>
+      
+      <label>Ad Soyad
+        <input type="text" name="name" required autocomplete="name" minlength="2" placeholder="Adınız Soyadınız" />
+      </label>
+
+      <label>E-posta
+        <input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="ornek@mail.com" />
+      </label>
+
+      <label>Konu
+        <input type="text" name="subject" required minlength="3" placeholder="Örn. Kurumsal web sitesi teklifi" />
+      </label>
+
+      <label>Mesaj
+        <textarea name="message" rows="6" required minlength="10" placeholder="Kısaca ihtiyacını anlat..."></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Gönder</button>
+        <span id="formStatus" class="muted small" role="status" aria-live="polite"></span>
+      </div>
+
+      <!-- JS kapalıysa fallback -->
+      <noscript>
+        <p class="muted small">
+          JavaScript kapalı. Mesaj göndermek için
+          <a href="mailto:civanmertkrc@gmail.com?subject=Teklif%20Talebi">buraya tıkla</a>.
+        </p>
+      </noscript>
+    </form>
+
+    <!-- Alternatif hızlı iletişim -->
+    <div class="section" style="padding-top:1rem">
+      <a class="btn btn-ghost" href="https://wa.me/905555555555?text=Merhaba%20CVNART%2C%20web%20sitesi%2Flogo%2Fkartvizit%2FSEO%20ihtiyac%C4%B1m%20var." target="_blank" rel="noopener">WhatsApp’tan yaz</a>
+      <span class="muted small">— örnek numaradır; kendi numaranla değiştir.</span>
+    </div>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -59,6 +110,7 @@
       </div>
     </div>
   </footer>
+
   <dialog id="postModal">
     <article class="modal-article">
       <header><h3 id="mTitle"></h3><button id="mClose" class="icon-btn" aria-label="Kapat"><span class="i i-close"></span></button></header>
@@ -67,6 +119,59 @@
       <div class="modal-content"><button id="shareBtn" class="btn btn-ghost">Paylaş</button><button id="copyLinkBtn" class="btn btn-ghost">Linki Kopyala</button></div>
     </article>
   </dialog>
+
   <script defer src="main.js"></script>
+  <script>
+    // Basit istemci tarafı doğrulama + mevcut mailto mantığı için yardımcı
+    (function () {
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('formStatus');
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Honeypot kontrolü
+        const hp = form.querySelector('input[name="company"]');
+        if (hp && hp.value.trim() !== "") {
+          status.textContent = "Gönderilemedi (spam tespit edildi).";
+          return;
+        }
+
+        // HTML5 validity
+        if (!form.checkValidity()) {
+          status.textContent = "Lütfen zorunlu alanları kontrol et.";
+          form.reportValidity();
+          return;
+        }
+
+        const fd = new FormData(form);
+        const name = fd.get('name');
+        const email = fd.get('email');
+        const subject = fd.get('subject');
+        const message = fd.get('message');
+
+        const body =
+`Ad: ${name}
+E-posta: ${email}
+
+${message}`;
+
+        const mailto = `mailto:${encodeURIComponent('civanmertkrc@gmail.com')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        status.textContent = "E-posta istemcin açılıyor…";
+        window.location.href = mailto;
+
+        // Temizlik
+        form.reset();
+        setTimeout(() => status.textContent = "Mesaj penceresi açıldı. Eğer açılmadıysa e-posta uygulaman çalışıyor mu kontrol et.", 1200);
+      }, false);
+    })();
+
+    // SW güncellendiğinde otomatik yenile
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.addEventListener("controllerchange", () => location.reload());
+    }
+  </script>
 </body>
 </html>
