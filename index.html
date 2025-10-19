@@ -1,48 +1,153 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!doctype html>
+<html lang="tr" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benim Blogum</title>
-  <meta name="description" content="Civan'ın kişisel blog sitesi. Hikayeler, düşünceler ve fotoğraflar.">
-  <meta name="keywords" content="blog, kişisel, hikaye, düşünce, Civan">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Civan Mert — Portfolio & Blog</title>
+  <meta name="description" content="Geliştirici portfolyosu, projeler ve teknik blog. Hızlı, modern, minimal."/>
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
 </head>
 <body>
-  <header>
-    <h1>Benim Blogum</h1>
-    <nav>
-      <a href="index.html">Ana Sayfa</a>
-      <a href="about.html">Hakkımda</a>
-      <a href="contact.html">İletişim</a>
-    </nav>
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Anasayfa">
+        <img src="img/logo.svg" alt="" class="logo" />
+        <span>Civan<span class="accent">Mert</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Ana menü">
+        <button id="navToggle" class="icon-btn" aria-expanded="false" aria-controls="navMenu" title="Menü">
+          <span class="i i-menu"></span>
+        </button>
+        <ul id="navMenu">
+          <li><a href="index.html#projeler">Projeler</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="about.html">Hakkımda</a></li>
+          <li><a href="contact.html" class="btn btn-primary">İletişim</a></li>
+          <li>
+            <button id="themeToggle" class="icon-btn" title="Tema değiştir" aria-label="Tema">
+              <span class="i i-sun"></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <button onclick="toggleDarkMode()">🌙 Mod Değiştir</button>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container reveal">
+      <div class="hero-text">
+        <h1>Hızlı • Şık • <span class="grad">Unutulmaz</span></h1>
+        <p>Performans ve tasarımı aynı potada eriten <strong>frontend/JS</strong> işleri. Aşağı kay ve tadını çıkar 😉</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projeler">Projeleri Gör</a>
+          <a class="btn btn-ghost" href="#blog">Bloga Dal</a>
+        </div>
+        <form id="searchForm" class="search">
+          <input id="searchInput" type="search" placeholder="Blogda ara… (ör. javascript)" aria-label="Blog araması">
+          <button class="icon-btn" title="Ara"><span class="i i-search"></span></button>
+        </form>
+      </div>
+      <div class="hero-art">
+        <img src="img/hero.svg" alt="" loading="eager" width="560" height="420">
+      </div>
+    </section>
 
-  <img src="img/kapak.jpg" alt="Kapak Görseli" class="kapak">
+    <!-- Projeler -->
+    <section id="projeler" class="container section reveal">
+      <div class="section-head">
+        <h2>Öne Çıkan Projeler</h2>
+        <p>Kod + tasarım = 💘. Aşağıdakiler canlı demolarla.</p>
+      </div>
 
-  <main>
-    <div id="blog-container"></div>
+      <div class="grid cards">
+        <article class="card">
+          <img src="img/project-1.webp" alt="" width="640" height="360" loading="lazy">
+          <div class="card-body">
+            <h3>Neon UI Kit</h3>
+            <p>Saf CSS ile erişilebilir, temalı ve animasyonlu bileşen seti.</p>
+            <div class="tags"><span>CSS</span><span>A11y</span><span>Design</span></div>
+            <div class="actions">
+              <a class="btn btn-ghost" href="#" aria-disabled="true">Demo</a>
+              <a class="btn btn-ghost" href="#" aria-disabled="true">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/project-2.webp" alt="" width="640" height="360" loading="lazy">
+          <div class="card-body">
+            <h3>TurboBlog</h3>
+            <p>Statik JSON’dan saniyede yüklenen mikro blog motoru.</p>
+            <div class="tags"><span>JS</span><span>Perf</span></div>
+            <div class="actions">
+              <a class="btn btn-ghost" href="#" aria-disabled="true">Demo</a>
+              <a class="btn btn-ghost" href="#" aria-disabled="true">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/project-3.webp" alt="" width="640" height="360" loading="lazy">
+          <div class="card-body">
+            <h3>VizLab</h3>
+            <p>Canvas tabanlı grafiklerle veriye hikâye anlatımı.</p>
+            <div class="tags"><span>Canvas</span><span>Data</span></div>
+            <div class="actions">
+              <a class="btn btn-ghost" href="#" aria-disabled="true">Demo</a>
+              <a class="btn btn-ghost" href="#" aria-disabled="true">Repo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="container section reveal">
+      <div class="section-head">
+        <h2>Blog</h2>
+        <p>Son yazılar; filtrele, tıkla, modalda oku.</p>
+        <div class="filters">
+          <button class="chip is-active" data-tag="all">Hepsi</button>
+          <button class="chip" data-tag="javascript">JavaScript</button>
+          <button class="chip" data-tag="css">CSS</button>
+          <button class="chip" data-tag="oyun">Oyun</button>
+        </div>
+      </div>
+
+      <div id="posts" class="grid cards slim"></div>
+      <div id="emptyState" class="empty hidden">Hiç sonuç yok 👀</div>
+    </section>
   </main>
 
-  <p id="counter">Ziyaretçi sayısı: <span id="count">0</span></p>
-
-  <footer>
-    <p>© 2025 Benim Blogum</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> Civan Mert • <a href="about.html">Hakkımda</a> • <a href="contact.html">İletişim</a></p>
+      <div class="social">
+        <a href="#" aria-label="GitHub"><span class="i i-github"></span></a>
+        <a href="#" aria-label="X"><span class="i i-x"></span></a>
+        <a href="#" aria-label="YouTube"><span class="i i-yt"></span></a>
+      </div>
+    </div>
   </footer>
 
-  <script src="main.js"></script>
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
+  <!-- Post Modal -->
+  <dialog id="postModal">
+    <article class="modal-article">
+      <header>
+        <h3 id="mTitle"></h3>
+        <button id="mClose" class="icon-btn" aria-label="Kapat"><span class="i i-close"></span></button>
+      </header>
+      <div id="mMeta" class="muted small"></div>
+      <div id="mContent" class="modal-content"></div>
+    </article>
+  </dialog>
 
-    let count = localStorage.getItem('visitCount') || 0;
-    count++;
-    localStorage.setItem('visitCount', count);
-    document.getElementById('count').textContent = count;
-  </script>
+  <script defer src="main.js"></script>
 </body>
 </html>
