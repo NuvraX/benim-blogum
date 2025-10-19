@@ -56,30 +56,79 @@
   </section>
 
   <section id="hizmetler" class="container section reveal">
-    <div class="section-head"><h2>Hizmetler</h2><p>İhtiyaca göre parça parça ya da paket.</p></div>
-    <div class="services">
-      <article class="service">
-        <h3>Web Sitesi</h3>
-        <p>Hızlı, mobil-öncelikli, SEO uyumlu statik/SSR siteler. Lighthouse 90+ hedefi.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>PWA</span></div>
-      </article>
-      <article class="service">
-        <h3>Logo Tasarımı</h3>
-        <p>Minimal, ölçeklenebilir vektör logolar. Renk/typography kılavuzu dahil.</p>
-        <div class="tags"><span>Vektör</span><span>Tipografi</span></div>
-      </article>
-      <article class="service">
-        <h3>Kartvizit Tasarımı</h3>
-        <p>Baskıya hazır PDF/CMYK dosyaları, hızlı revizyon.</p>
-        <div class="tags"><span>Print</span><span>CMYK</span></div>
-      </article>
-      <article class="service">
-        <h3>SEO Desteği</h3>
-        <p>Teknik SEO, hız optimizasyonu, schema.org, sitemap, robots, meta/OG.</p>
-        <div class="tags"><span>Core Web Vitals</span><span>Schema</span></div>
-      </article>
-    </div>
-  </section>
+  <div class="section-head">
+    <h2>Hizmetlerim</h2>
+    <p>İhtiyaca göre parça parça ya da paket. Kartların üstüne gelince etkiyi gör 😉</p>
+  </div>
+
+  <div class="services">
+    <article class="service service-card reveal-up">
+      <h3><span class="emoji">🖥️</span> Web Sitesi</h3>
+      <p>Hızlı, mobil-öncelikli, SEO uyumlu statik/SSR siteler. Lighthouse 90+ hedefi.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>PWA</span></div>
+    </article>
+
+    <article class="service service-card reveal-up" style="transition-delay:.07s">
+      <h3><span class="emoji">🎯</span> Logo Tasarımı</h3>
+      <p>Minimal, ölçeklenebilir vektör logolar. Renk/typography kılavuzu dahil.</p>
+      <div class="tags"><span>Vektör</span><span>Tipografi</span></div>
+    </article>
+
+    <article class="service service-card reveal-up" style="transition-delay:.14s">
+      <h3><span class="emoji">💳</span> Kartvizit Tasarımı</h3>
+      <p>Baskıya hazır PDF/CMYK dosyaları, hızlı revizyon.</p>
+      <div class="tags"><span>Print</span><span>CMYK</span></div>
+    </article>
+
+    <article class="service service-card reveal-up" style="transition-delay:.21s">
+      <h3><span class="emoji">⚡</span> SEO Desteği</h3>
+      <p>Teknik SEO, hız optimizasyonu, schema.org, sitemap, robots, meta/OG.</p>
+      <div class="tags"><span>Core Web Vitals</span><span>Schema</span></div>
+    </article>
+  </div>
+</section>
+  
+<section class="container section reveal">
+  <div class="cta">
+    <h3>Hızlı Teklif Al</h3>
+    <p class="muted small">Aşağıyı doldur, mailine ilk yanıtı göndereyim.</p>
+
+    <!-- Formspree formu -->
+    <form id="ctaForm">
+      <input class="full" type="hidden" name="_subject" value="CVNART - Hızlı Teklif Talebi" />
+      <input class="full" type="hidden" name="formName" value="quick-quote" />
+
+      <label class="full">Proje Türü
+        <select name="type" required>
+          <option value="web">Web Sitesi</option>
+          <option value="logo">Logo Tasarımı</option>
+          <option value="card">Kartvizit Tasarımı</option>
+          <option value="seo">SEO Desteği</option>
+        </select>
+      </label>
+
+      <label>Ad Soyad
+        <input type="text" name="name" required minlength="2" placeholder="Adınız Soyadınız" />
+      </label>
+
+      <label>E-posta
+        <input type="email" name="email" required placeholder="ornek@mail.com" />
+      </label>
+
+      <label class="full">Kısa Not
+        <input type="text" name="note" placeholder="Örn. 1 sayfa tanıtım, 1 hafta içinde..." />
+      </label>
+
+      <div class="full" style="display:flex; gap:.6rem; align-items:center;">
+        <button type="submit" class="btn btn-primary">Gönder</button>
+        <span id="ctaStatus" class="muted small" role="status" aria-live="polite"></span>
+      </div>
+    </form>
+
+    <small>Not: Form verilerin güvenle Formspree’e iletilir; arka uç gerekmez.</small>
+  </div>
+</section>
+
 
   <section id="projeler" class="container section reveal">
     <div class="section-head"><h2>Projeler</h2><p>Seçili işler.</p></div>
