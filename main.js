@@ -21,4 +21,9 @@ fetch('posts.json')
     document.body.classList.toggle('dark-mode');
   }
 </script>
+let count = localStorage.getItem('visitCount') || 0;
+count++;
+localStorage.setItem('visitCount', count);
+document.getElementById('count').textContent = count;
+
 
