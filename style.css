@@ -1,25 +1,32 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
 }
+
 header {
-  background: #333;
+  background-color: #007acc;
   color: white;
-  padding: 1em;
+  padding: 20px;
+  text-align: center;
 }
+
 nav a {
+  margin: 0 10px;
   color: white;
-  margin-right: 1em;
   text-decoration: none;
 }
-main {
-  padding: 2em;
+
+#blog-container {
+  padding: 20px;
 }
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1em;
+
+.blog-post {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
