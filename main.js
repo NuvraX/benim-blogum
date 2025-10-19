@@ -15,3 +15,10 @@ fetch('posts.json')
     });
   })
   .catch(error => console.error('Yazılar yüklenemedi:', error));
+<button onclick="toggleDarkMode()">🌙 Mod Değiştir</button>
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
