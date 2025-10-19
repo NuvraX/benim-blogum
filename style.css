@@ -62,4 +62,11 @@ header.dark-mode {
 nav a.dark-mode {
   color: #ffcc00;
 }
+.blog-post {
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: scale(1.02);
+}
 
