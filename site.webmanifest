@@ -1,0 +1,15 @@
+{
+  "name": "CVNART — Web Sitesi, Logo, Kartvizit, SEO",
+  "short_name": "CVNART",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f1117",
+  "theme_color": "#7c7cff",
+  "icons": [
+    {
+      "src": "img/hero.webp",
+      "sizes": "512x288",
+      "type": "image/webp"
+    }
+  ]
+}

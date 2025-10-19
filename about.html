@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Hakkımda — CVNART</title>
+  <meta name="description" content="CVNART ve çalışma prensibi."/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hakkımda — CVNART">
+  <meta property="og:description" content="CVNART ve çalışma prensibi.">
+  <meta property="og:image" content="img/hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="./about.html">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "CVNART", "url": "https://example.com/", "logo": "img/logo.svg", "sameAs": [], "description": "Web sitesi tasarım ve geliştirme, logo tasarımı, kartvizit tasarımı ve SEO danışmanlığı."}</script>
+</head>
+<body>
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Anasayfa"><img class="logo" src="img/logo.svg" alt=""><span>CVN<span class="accent">ART</span></span></a>
+      <nav class="nav" aria-label="Ana menü">
+        <button id="navToggle" class="icon-btn" aria-expanded="false" aria-controls="navMenu" title="Menü"><span class="i i-menu"></span></button>
+        <ul id="navMenu">
+          <li><a href="index.html#hizmetler">Hizmetler</a></li>
+          <li><a href="index.html#projeler">Projeler</a></li>
+          <li><a href="index.html#fiyat">Fiyatlar</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="about.html">Hakkımda</a></li>
+          <li><a href="contact.html" class="btn btn-primary">İletişim</a></li>
+          <li><button id="themeToggle" class="icon-btn" title="Tema"><span class="i i-sun"></span></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+<main class="container section prose" id="main">
+  <h1>CVNART Hakkında</h1>
+  <p>Ben Civan. CVNART markasıyla <strong>web sitesi</strong> geliştiriyor, <strong>logo</strong> ve <strong>kartvizit</strong> tasarlıyor, <strong>SEO</strong> desteği sunuyorum.</p>
+  <h2>Yaklaşım</h2>
+  <ul><li>Lighthouse 90+ hedefi</li><li>Vanilla/az bağımlılık</li><li>Temiz tipografi ve akış</li></ul>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> CVNART</p>
+      <div class="social">
+        <a href="#" aria-label="GitHub"><span class="i i-github"></span></a>
+        <a href="#" aria-label="X"><span class="i i-x"></span></a>
+        <a href="#" aria-label="YouTube"><span class="i i-yt"></span></a>
+      </div>
+    </div>
+  </footer>
+  <dialog id="postModal">
+    <article class="modal-article">
+      <header><h3 id="mTitle"></h3><button id="mClose" class="icon-btn" aria-label="Kapat"><span class="i i-close"></span></button></header>
+      <div id="mMeta" class="muted small"></div>
+      <div id="mContent" class="modal-content"></div>
+      <div class="modal-content"><button id="shareBtn" class="btn btn-ghost">Paylaş</button><button id="copyLinkBtn" class="btn btn-ghost">Linki Kopyala</button></div>
+    </article>
+  </dialog>
+  <script defer src="main.js"></script>
+</body>
+</html>

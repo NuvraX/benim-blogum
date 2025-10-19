@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "slug": "web-perf-ipuclari",
+      "title_tr": "Web performansını 10 dakikada iyileştir",
+      "title_en": "Boost web performance in 10 minutes",
+      "date": "2025-10-19",
+      "tags": [
+        "seo",
+        "perf"
+      ],
+      "cover": "img/post-1.webp",
+      "excerpt_tr": "INP/CLS nedir? Küçük hamlelerle puanları uçuralım.",
+      "excerpt_en": "Quick wins for Core Web Vitals.",
+      "content_tr": "<p>Resimleri <code>webp</code> yap, <code>preload</code> kullan, CSS'yi küçült.</p>",
+      "content_en": "<p>Convert images to webp, use preload, minify CSS.</p>"
+    },
+    {
+      "id": 2,
+      "slug": "logo-icin-tipografi",
+      "title_tr": "Logo tipografisi: Neden önemli?",
+      "title_en": "Logo typography: why it matters",
+      "date": "2025-10-19",
+      "tags": [
+        "logo",
+        "design"
+      ],
+      "cover": "img/post-2.webp",
+      "excerpt_tr": "Tipografi kimliktir. Doğru ağırlık ve espas harikalar yaratır.",
+      "excerpt_en": "Typography is identity.",
+      "content_tr": "<p>Geometri, kontrast ve okunabilirlik: üç sac ayağı.</p>",
+      "content_en": "<p>Geometry, contrast and legibility.</p>"
+    },
+    {
+      "id": 3,
+      "slug": "kartvizit-baski-hazirligi",
+      "title_tr": "Kartvizit baskı hazırlığı check-list",
+      "title_en": "Business card print checklist",
+      "date": "2025-10-19",
+      "tags": [
+        "print",
+        "kartvizit"
+      ],
+      "cover": "img/post-3.webp",
+      "excerpt_tr": "Bleed, güvenli alan, CMYK, 300DPI… Hepsi tek listede.",
+      "excerpt_en": "Bleed, safe area, CMYK, 300dpi…",
+      "content_tr": "<p>3mm taşma, 300dpi, yazı taşırma yok.</p>",
+      "content_en": "<p>3mm bleed, 300dpi, no text in bleed.</p>"
+    }
+  ]
+}

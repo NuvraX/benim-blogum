@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>CVNART — Web Sitesi, Logo, Kartvizit, SEO</title>
+  <meta name="description" content="Ben web sitesi yapıyorum, logo ve kartvizit tasarımı yapıyorum, SEO yardımı veriyorum. Şirketimin adı CVNART."/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CVNART — Web Sitesi, Logo, Kartvizit, SEO">
+  <meta property="og:description" content="Ben web sitesi yapıyorum, logo ve kartvizit tasarımı yapıyorum, SEO yardımı veriyorum. Şirketimin adı CVNART.">
+  <meta property="og:image" content="img/hero.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="./index.html">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "CVNART", "url": "https://example.com/", "logo": "img/logo.svg", "sameAs": [], "description": "Web sitesi tasarım ve geliştirme, logo tasarımı, kartvizit tasarımı ve SEO danışmanlığı."}</script>
+</head>
+<body>
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Anasayfa"><img class="logo" src="img/logo.svg" alt=""><span>CVN<span class="accent">ART</span></span></a>
+      <nav class="nav" aria-label="Ana menü">
+        <button id="navToggle" class="icon-btn" aria-expanded="false" aria-controls="navMenu" title="Menü"><span class="i i-menu"></span></button>
+        <ul id="navMenu">
+          <li><a href="index.html#hizmetler">Hizmetler</a></li>
+          <li><a href="index.html#projeler">Projeler</a></li>
+          <li><a href="index.html#fiyat">Fiyatlar</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="about.html">Hakkımda</a></li>
+          <li><a href="contact.html" class="btn btn-primary">İletişim</a></li>
+          <li><button id="themeToggle" class="icon-btn" title="Tema"><span class="i i-sun"></span></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+<main id="main">
+  <section class="hero container reveal">
+    <div class="hero-text">
+      <div class="kicker">CVNART</div>
+      <h1>Ben <span class="grad">CVNART</span>. <br/>Web sitesi yapıyorum, logo ve kartvizit tasarlıyorum, SEO yardımı veriyorum.</h1>
+      <p>Hızlı, modern ve gururla göstereceğin işler yapıyorum. Tek dosyalı statik yapıdan SEO dostu PWA'ya kadar.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#hizmetler">Hizmetleri Gör</a>
+        <a class="btn btn-ghost" href="#fiyat">Fiyatları İncele</a>
+      </div>
+      <form id="searchForm" class="search">
+        <input id="searchInput" type="search" placeholder="Blogda ara… (ör. logo, SEO)" aria-label="Blog araması">
+        <button class="icon-btn" title="Ara"><span class="i i-search"></span></button>
+      </form>
+    </div>
+    <div><img src="img/hero.webp" alt=""></div>
+  </section>
+
+  <section id="hizmetler" class="container section reveal">
+    <div class="section-head"><h2>Hizmetler</h2><p>İhtiyaca göre parça parça ya da paket.</p></div>
+    <div class="services">
+      <article class="service">
+        <h3>Web Sitesi</h3>
+        <p>Hızlı, mobil-öncelikli, SEO uyumlu statik/SSR siteler. Lighthouse 90+ hedefi.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>PWA</span></div>
+      </article>
+      <article class="service">
+        <h3>Logo Tasarımı</h3>
+        <p>Minimal, ölçeklenebilir vektör logolar. Renk/typography kılavuzu dahil.</p>
+        <div class="tags"><span>Vektör</span><span>Tipografi</span></div>
+      </article>
+      <article class="service">
+        <h3>Kartvizit Tasarımı</h3>
+        <p>Baskıya hazır PDF/CMYK dosyaları, hızlı revizyon.</p>
+        <div class="tags"><span>Print</span><span>CMYK</span></div>
+      </article>
+      <article class="service">
+        <h3>SEO Desteği</h3>
+        <p>Teknik SEO, hız optimizasyonu, schema.org, sitemap, robots, meta/OG.</p>
+        <div class="tags"><span>Core Web Vitals</span><span>Schema</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="projeler" class="container section reveal">
+    <div class="section-head"><h2>Projeler</h2><p>Seçili işler.</p></div>
+    <div class="grid cards">
+      <article class="card"><img src="img/site.webp" alt=""><div class="card-body"><h3>Kurumsal Site</h3><p>Statik + PWA, 1 sn altında açılış.</p></div></article>
+      <article class="card"><img src="img/logo.webp" alt=""><div class="card-body"><h3>Logo Koleksiyonu</h3><p>Temiz çizgiler, net kimlik.</p></div></article>
+      <article class="card"><img src="img/card.webp" alt=""><div class="card-body"><h3>Kartvizit Seti</h3><p>Baskıya hazır paket.</p></div></article>
+    </div>
+  </section>
+
+  <section id="fiyat" class="container section reveal">
+    <div class="section-head"><h2>Fiyatlar</h2><p>Şeffaf başlangıç paketleri — proje kapsamına göre şekillenir.</p></div>
+    <div class="grid cards">
+      <article class="card"><div class="card-body"><h3>Starter Web</h3><p class="muted">Tek sayfa tanıtım</p><h2>₺6.500</h2><div class="list"><span>• Responsive</span><span>• Temel SEO</span><span>• 1 hafta</span></div><a class="btn btn-primary" href="contact.html">Teklif Al</a></div></article>
+      <article class="card"><div class="card-body"><h3>Logo Pro</h3><p class="muted">3 konsept + rehber</p><h2>₺4.500</h2><div class="list"><span>• Vektör + SVG</span><span>• Renk/Font seti</span><span>• 2 revizyon</span></div><a class="btn btn-primary" href="contact.html">Teklif Al</a></div></article>
+      <article class="card"><div class="card-body"><h3>SEO Boost</h3><p class="muted">Teknik denetim</p><h2>₺3.500</h2><div class="list"><span>• CWV iyileştirme</span><span>• Schema + sitemap</span><span>• Rapor</span></div><a class="btn btn-primary" href="contact.html">Teklif Al</a></div></article>
+    </div>
+  </section>
+
+  <section id="blog" class="container section reveal">
+    <div class="section-head"><h2>Blog</h2><p>İpucu ve rehberler.</p></div>
+    <div id="posts" class="grid cards slim"></div>
+    <div id="emptyState" class="empty hidden">Hiç sonuç yok 👀</div>
+  </section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> CVNART</p>
+      <div class="social">
+        <a href="#" aria-label="GitHub"><span class="i i-github"></span></a>
+        <a href="#" aria-label="X"><span class="i i-x"></span></a>
+        <a href="#" aria-label="YouTube"><span class="i i-yt"></span></a>
+      </div>
+    </div>
+  </footer>
+  <dialog id="postModal">
+    <article class="modal-article">
+      <header><h3 id="mTitle"></h3><button id="mClose" class="icon-btn" aria-label="Kapat"><span class="i i-close"></span></button></header>
+      <div id="mMeta" class="muted small"></div>
+      <div id="mContent" class="modal-content"></div>
+      <div class="modal-content"><button id="shareBtn" class="btn btn-ghost">Paylaş</button><button id="copyLinkBtn" class="btn btn-ghost">Linki Kopyala</button></div>
+    </article>
+  </dialog>
+  <script defer src="main.js"></script>
+</body>
+</html>

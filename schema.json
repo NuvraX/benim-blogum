@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CVNART",
+  "url": "https://example.com/",
+  "logo": "img/logo.svg",
+  "sameAs": [],
+  "description": "Web sitesi tasarım ve geliştirme, logo tasarımı, kartvizit tasarımı ve SEO danışmanlığı."
+}
