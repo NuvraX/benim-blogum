@@ -17,3 +17,7 @@ window.addEventListener("hashchange", updateHashRoute);
 
 if("serviceWorker" in navigator){ window.addEventListener("load", ()=>{ navigator.serviceWorker.register("./sw.js").catch(console.warn); }); }
 document.addEventListener("DOMContentLoaded",()=>{ if($("#posts")) loadPosts(); });
+navigator.serviceWorker.addEventListener("controllerchange", () => {
+  window.location.reload();
+});
+
