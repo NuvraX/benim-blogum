@@ -1,0 +1,13 @@
+blog-site/
+├── index.html
+├── about.html
+├── blog.html
+├── post.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── images/
+│   └── (fotoğraflar)
+├── data/
+│   └── posts.json
