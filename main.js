@@ -1,10 +1,16 @@
-fetch('data/posts.json')
+fetch('posts.json')
   .then(response => response.json())
   .then(posts => {
-    const container = document.getElementById('blog-posts');
+    const container = document.getElementById('blog-container');
     posts.forEach(post => {
-      const div = document.createElement('div');
-      div.innerHTML = `<h3>${post.title}</h3><p>${post.content}</p>`;
-      container.appendChild(div);
+      const postElement = document.createElement('div');
+      postElement.className = 'blog-post';
+      postElement.innerHTML = `
+        <h2>${post.title}</h2>
+        <p><em>${post.date}</em></p>
+        <p>${post.content}</p>
+      `;
+      container.appendChild(postElement);
     });
-  });
+  })
+  .catch(error => console.error('Yazılar yüklenemedi:', error));
