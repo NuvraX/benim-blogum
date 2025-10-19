@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Merriweather', serif;
   background-color: #f9f9f9;
   color: #333;
   margin: 0;
@@ -17,10 +17,24 @@ nav a {
   margin: 0 10px;
   color: white;
   text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+.kapak {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 #blog-container {
   padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .blog-post {
@@ -29,4 +43,11 @@ nav a {
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.blog-post img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
