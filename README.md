@@ -1,10 +1,11 @@
 # Benim Blogum
 
-Bu proje kişisel blog sitemdir. HTML, CSS, JavaScript ve JSON kullanılarak oluşturulmuştur.
+Bu proje Civan'ın kişisel blog sitesidir. HTML, CSS, JavaScript ve JSON kullanılarak oluşturulmuştur.
 
 ## Özellikler
 - Dinamik blog yazıları
-- Temiz ve sade tasarım
+- Görselli içerik desteği
+- Responsive ve sade tasarım
 - Kolayca genişletilebilir yapı
 
 ## Nasıl Kullanılır
