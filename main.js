@@ -6,6 +6,7 @@ fetch('posts.json')
       const postElement = document.createElement('div');
       postElement.className = 'blog-post';
       postElement.innerHTML = `
+        <img src="${post.image}" alt="${post.title}">
         <h2>${post.title}</h2>
         <p><em>${post.date}</em></p>
         <p>${post.content}</p>
