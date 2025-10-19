@@ -47,3 +47,38 @@ dialog{border:0;padding:0;background:transparent} dialog::backdrop{background:rg
 
 @media (max-width:960px){.hero{grid-template-columns:1fr;text-align:center}.hero-cta{justify-content:center}.cards>*{grid-column:span 6}.cards.slim>*{grid-column:span 6}.service{grid-column:span 12}}
 @media (max-width:640px){#navToggle{display:inline-grid}#navMenu{display:none;position:absolute;right:1rem;top:60px;background:var(--bg-elev);border:1px solid var(--stroke);border-radius:14px;padding:.4rem;box-shadow:var(--shadow);flex-direction:column;min-width:220px}#navMenu.show{display:flex}.cards>*,.cards.slim>*{grid-column:span 12}}
+/* ==== Hizmet Kartı Animasyonları ==== */
+.reveal-up { opacity: 0; transform: translateY(18px); }
+.reveal-up.is-visible { opacity: 1; transform: none; transition: opacity .5s ease, transform .5s ease; }
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.service-card::after{
+  content:""; position:absolute; inset:auto -40% -40% -40%;
+  height:120%; background: radial-gradient(40% 60% at 50% 100%, color-mix(in srgb, var(--brand) 25%, transparent), transparent 60%);
+  opacity:.0; transform: translateY(10px) scale(1.05); transition: opacity .35s ease, transform .35s ease;
+  pointer-events:none; z-index:-1;
+}
+.service-card:hover::after{ opacity:.9; transform: translateY(0) scale(1); }
+
+.service-card h3{ display:flex; align-items:center; gap:.5rem; }
+.service-card .emoji{ font-size:1.2rem; }
+
+/* ==== Hızlı Teklif (CTA) ==== */
+.cta {
+  margin: 2rem 0 0;
+  padding: 1.2rem;
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.cta h3{ margin:.2rem 0 .4rem; }
+.cta form{ display:grid; gap:.6rem; grid-template-columns: 1fr 1fr; }
+.cta form .full{ grid-column: 1 / -1; }
+.cta small{ color: var(--muted); }
+@media (max-width: 640px){ .cta form{ grid-template-columns: 1fr; } }
+
